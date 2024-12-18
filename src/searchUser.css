@@ -1,0 +1,18 @@
+.searchUser{
+    margin-left: 80px;
+    margin-right: 0px;
+    color: black;
+    padding: 0;
+    background: lightgray;
+    height: 100vh;
+    position: fixed;
+    width: 400px;
+}
+.topbar { 
+    margin-top: 5%;
+    margin-left: 30px;
+}
+
+.nav-wrapper{
+    margin-top: 5%;
+}
