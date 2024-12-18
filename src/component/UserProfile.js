@@ -118,7 +118,7 @@ const UserProfile = () => {
                     })
                 }
             </div>
-        </div>:<h2>LOADING!....</h2>}</>
+        </div>:<h2>LOADING!...</h2>}</>
         
     )
 
