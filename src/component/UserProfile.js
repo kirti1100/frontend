@@ -70,11 +70,12 @@ const UserProfile = () => {
     return (
         <>
         {profile? <div style={{ maxWidth: "800px", margin: "0px auto" }}>
-            <div style={{
+            <div className="col-12 col-md-6 col-lg-4" style={{
                 display: "flex",
                 justifyContent: "space-around",
                 margin: "18px 0px",
                 borderBottom:"1px solid black"
+                
             }}>
                 <div>
                     <img style={{ width: "160px", height: "160px", borderRadius: "80px" }} src={profile.user.picture}/>
@@ -111,8 +112,8 @@ const UserProfile = () => {
                 {
                     profile.post.map(item=>{
                         return(
-                            <Link to={"/userposts/"+item.postedby._id}>
-                            <img key={item._id} className="item" src={item.picture} alt={item.title}/>
+                            <Link to={"/userposts/"+item.postedby.id}>
+                            <img key={item.id} className="item" src={item.picture} alt={item.title}/>
                             </Link>
                         )
                     })

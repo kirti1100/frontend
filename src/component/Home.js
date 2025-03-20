@@ -175,7 +175,7 @@ const Home = () => {
                     {
                         data.map(item => {
                             return (
-                                <div className='status' style={{ width: "30rem", margin: "15px auto" ,position:"relative"}}>
+                                <div className='status col-12 col-md-6 col-lg-4' style={{ width: "30rem", margin: "15px auto" ,position:"relative"}}>
                                     <div style={{ width: "30rem", margin: "15px auto" }}>
                                         <div style={{marginBottom:"30px"}}>
                                             <img style={{ width: "30px", height: "24px", borderRadius: "30px", float: "left" }} src={item.postedby.picture} />

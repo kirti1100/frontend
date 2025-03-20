@@ -11,11 +11,11 @@ const MyPost = () => {
         fetch(baseURL+"/mypost",{
             method:"get",
             headers:{
-                "Authorization":localStorage.getItem("jwt")
+               "Authorization": "Bearer "+localStorage.getItem("jwt")
             }
         }).then(res=>res.json())
         .then(result=>{
-            setData(result.myposts)
+            setData(result)
         })
     },[])
     const likePost=(id)=>{

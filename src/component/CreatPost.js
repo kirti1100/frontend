@@ -58,25 +58,26 @@ const CreatPost = () => {
         
     }   
     return (   
-        <div className="card" style={{width:"350px",height:"50vh",margin:"170px auto",position:"relative",borderRadius:"15px"}}>
-        <h5 style={{textAlign:"center"}}>Create new post</h5>
+        <div className="card" style={{width:"350px",height:"57vh",margin:"170px auto",position:"relative",borderRadius:"15px"}}>
+        <h5 style={{textAlign:"center",marginTop:"5px"}}>Create new post</h5>
         <div className='status' style={{width:"350px"}}></div>
         <div style={{alignItems:"center",display:"flex",justifyContent:"center",marginTop:"47px"}}>
           <i className="material-icons navicon" style={{fontSize:"100px"}}>collections</i>
         </div>
-        <div className="mb-3" style={{textAlign:"center"}}>
+        <div className="mb-3 card-body" style={{textAlign:"center"}}>
         <input className="card-title" type="text" placeholder="Title" value={title} onChange={(e)=>{setTitle(e.target.value)}}/>
          <input className="card-text" type="text" placeholder="Add a caption." value={body} onChange={(e)=>{setBody(e.target.value)}}/>
-        </div>
+        
         <h4 style={{textAlign:"center",fontWeight:"normal"}}> Drag photos and videos here</h4>
-        <div style={{alignContent:"center",display:"flex",justifyContent:"center",marginTop:"10px"}}>
+        <div style={{alignContent:"center",justifyContent:"center",height:"5vh"}}>
         <input  type="file" onChange={(e)=>{setFile(e.target.files[0])}}/>
-        <div>
-                   <button type="submit" className="btn-primary" onClick={postdata}>
+        <div style={{textAlign:"center"}}>
+                   <button type="submit" className="btn-primary" style={{height:"4vh",marginTop:"6px"}} onClick={postdata}>
                         Submit
                    </button>
                </div>
 
+        </div>
         </div>
 
         </div>

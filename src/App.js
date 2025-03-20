@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css'
 import React, { createContext, useContext, useEffect, useReducer } from 'react'
 import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
@@ -22,6 +23,7 @@ import UserProfile from './component/UserProfile'
 import { initialvalue, postReducer } from './reducers/postReducer'
 import { initialToggle, toggleReducer } from './reducers/toggleReducer'
 import { intialState, userReducer } from "./reducers/userReducer"
+
 export const UserContext = createContext();
 export const baseURL= process.env.REACT_APP_SERVER_URL
 

@@ -28,30 +28,30 @@ const NavBar1 = () => {
           name: "search"
 
          },
-         {
-          path:"/explore",
-          icon:"explore",
-          name: "explore"
+        //  {
+        //   path:"/explore",
+        //   icon:"explore",
+        //   name: "explore"
 
-         },
-         {
-          path:"/reels",
-          icon:"movie",
-          name: "Reels"
+        //  },
+        //  {
+        //   path:"/reels",
+        //   icon:"movie",
+        //   name: "Reels"
 
-         },
-         {
-          path:"/messages",
-          icon:"message",
-          name: "messages"
+        //  },
+        //  {
+        //   path:"/messages",
+        //   icon:"message",
+        //   name: "messages"
 
-         },
-         {
-          path:"/notification",
-          icon:"favorite",
-          name: "notification"
+        //  },
+        //  {
+        //   path:"/notification",
+        //   icon:"favorite",
+        //   name: "notification"
 
-         },
+        //  },
          {
           path:"/create",
           icon:"add_box",
@@ -85,8 +85,8 @@ const NavBar1 = () => {
           {
             result.map((item,index)=>(
               
-             <div className="nav-link" >
-              <i className="material-icons navicon " onClick={toggle1} style={{ float: "left", padding: "10px"}}>
+             <div className="nav-link">
+              <i className="material-icons navicon" onClick={toggle1} style={{ float: "left", padding: "10px"}}>
                 {item.icon}
               </i>
               <Link className="nav-link navname"  onClick={toggle1} to={item.path} key={index} style={{display: isOpen? "block" : "none"}}>

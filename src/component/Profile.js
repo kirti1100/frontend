@@ -38,9 +38,9 @@ const Profile = () => {
                     justifyContent: "space-around",
                     width: "108%"
                 }}>
-                    <Link to="/myposts" style={{color:"black"}}><h5>{posts.length} posts</h5></Link>
-                    <Link to="/followers" ><h5>{state.followers.length} followers </h5></Link>
-                    <Link to="/following" ><h5>{state.following.length} following</h5></Link>
+                    <Link to="/myposts"><h5>{posts.length} posts</h5></Link>
+                    <Link ><h5>{state.followers.length} followers </h5></Link>
+                    <Link ><h5>{state.following.length} following</h5></Link>
                 </div>
                 <div>
                     <h5>Big Sur</h5>
